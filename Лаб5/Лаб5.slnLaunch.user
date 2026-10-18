@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "Краскала1\\Краскала1.vcxproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "Лаб5\\Лаб5.vcxproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]

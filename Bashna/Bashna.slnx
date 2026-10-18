@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Bashna/Bashna.vcxproj" Id="c1e82048-dc7c-4f83-8f35-5e0dab224b5c" />
+</Solution>

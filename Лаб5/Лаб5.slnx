@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Краскала1/Краскала1.vcxproj" Id="38f95d7b-1b7d-46ba-bab9-0cee2104d571" />
+  <Project Path="Лаб5/Лаб5.vcxproj" Id="53eb2346-304f-44b8-a4e6-68b8492e8ed7" />
+</Solution>
