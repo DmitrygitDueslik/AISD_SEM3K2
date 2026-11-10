@@ -3,7 +3,6 @@
 #include <algorithm>
 
 using namespace std;
-
 struct Items
 {
 	string name;
@@ -16,23 +15,35 @@ int main ( )
 	setlocale ( LC_ALL, "Russian" );
 	int maxCapacity;
 	cout << "Введите вместимость рюкзака: ";
-	cin >> maxCapacity;
+	if ( !(cin >> maxCapacity) || maxCapacity <= 0 ) {
+		cout << "Вместимость рюкзака неправильная \n";
+		return 0;
+	}
 
 	int itemCount;
 	cout << "Введите количество товаров: ";
-	cin >> itemCount;
+	if ( !(cin >> itemCount) || itemCount <= 0 ) {
+		cout << "Количество товаров неправильное\n";
+		return 0;
+	}
 
 	Items* items = new Items[itemCount];
 	for ( int i = 0; i < itemCount; i++ ) {
 		cout << "Введите название товара " << i + 1 << ": ";
 		if ( i == 0 ) cin.ignore ( );
 		getline ( cin, items[i].name );
-
+		cin.ignore ( );
 		cout << "Введите вес товара " << i + 1 << ": ";
-		cin >> items[i].weight;
+		if ( !(cin >> items[i].weight) || items[i].weight <= 0 ) {
+			cout << "Вес товара неправильный\n";
+			return 0;
+		};
 
 		cout << "Введите цену товара " << i + 1 << ": ";
-		cin >> items[i].price;
+		if ( !(cin >> items[i].price) || items[i].price <= 0 ) {
+			cout << "Цена товара неправильная\n";
+			return 0;
+		};
 		cin.ignore ( );
 	}
 
